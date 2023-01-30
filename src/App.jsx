@@ -26,7 +26,7 @@ function App() {
     setCoords(newCoords)
   }
 
-  const changeTemps = () => setIsCelsius(!isCelsius)
+  const changeTemp = () => setIsCelsius(!isCelsius)
 
     
 //*use effect geolocation
@@ -40,9 +40,7 @@ function App() {
       axios.get(URL)
       .then(res => {
         setTimeout(()=>{
-          setWeather(res.data)
-
-        //*conversions of celsius to fahrenheit and vice versa
+          setWeather(res.data) //*conversions of celsius to fahrenheit and vice versa
         const celsius = (res.data.main.temp - 273.15).toFixed(2);
         const fahrenheit = (celsius * (9/5) + 32).toFixed(2);
         const newTemps = {
@@ -55,6 +53,7 @@ function App() {
       .catch(err => console.log(err))
     }
     },[coords])
+      
 
 
   return (
@@ -62,7 +61,7 @@ function App() {
     {
       weather ? (
       <
-    WeatherCard weather={weather} temps={temps} isCelsius={isCelsius} changeTemps={changeTemps} />
+    WeatherCard weather={weather} temps={temps} isCelsius={isCelsius} changeTemps={changeTemp} />
       ) : <Loader />
     }
     

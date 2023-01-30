@@ -17,9 +17,11 @@
 }
 .tittle {
     color: rgba(0, 0, 0, 0.678);
+    font-family: 'Solitreo', cursive;
 }
 .tittle span {
     color: rgba(0, 0, 255, 0.589);
+    font-family: 'Solitreo', cursive;
 }
 .cont-info-clima  {
     border-top: 1px solid white;
@@ -28,9 +30,10 @@
     flex-wrap: nowrap;
     border-radius: 1px;
     padding: .5rem 0rem;
-    margin: .5rem 0rem;
+    margin: .5rem .9rem;
     border-bottom:1px solid white;
     justify-content: center;
+    font-family: 'Solitreo', cursive;
 }
 .cont-info-clima span {
     color: rgb(245, 245, 245);
@@ -39,23 +42,55 @@
 }
 #cont-span1 , #cont-span2 , #cont-span3 , #cont-span4   {
     color: rgba(0, 0, 255, 0.589);
+    font-family: 'Roboto Mono', monospace;
 }
 .grades {
-    color: rgba(255, 0, 0, 0.603);
+    display: flex;
+    justify-content: space-evenly;
+    padding: .3rem 0rem;
+    background-color: rgba(0, 0, 0, 0.103);
+    border-radius: 5%;
+    font-family: 'Roboto Mono', monospace;
+}
+.grades , .grades span {
+    color: #F7F7A8;
+    font-family: 'Roboto Mono', monospace;
+}
+.grades h2 {
+    color:rgba(0, 0, 255, 0.589);
+    font-size: 1rem;
 }
 .btn {
     position: relative;
-    top: .5rem;
+    top: .1rem;
     border: 1px solid blue;
-    padding: .5rem 2rem;
+    padding: .2rem 2rem;
     border-radius: 7px;
     background-color:rgba(0, 0, 255, 0.986) ;
     color: white;
     cursor: pointer;
+    font-family: 'Solitreo', cursive;
 }
 .btn:hover {
     transform: scale(1.2);
     transition: 1.5s;
     background-color:rgba(0, 0, 255, 0.418) ;
     border: none;
+}
+.timeZone {
+    background-color: rgba(0, 0, 255, 0.178);
+    padding: .8rem 0rem;
+    color: white;
+    margin-bottom: .2rem;
+    border-radius: 5%;
+    margin-top: .5rem;
+    font-family: 'Solitreo', cursive;
+}
+#hours {
+    color:white;
+    padding: .2rem 1.5rem;
+    margin-bottom: 1rem;
+    background-color:  rgba(0, 0, 255, 0.178);
+    border-radius: 7px;
+    font-family: 'Roboto Mono', monospace;
 }
